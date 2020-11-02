@@ -12,15 +12,49 @@ npm install -S @feizheng/next-s3-helper
 ```
 
 ## apis
-| api | params | description   |
-|-----|--------|---------------|
-| get | -      | desc balabala |
+| api    | params | description        |
+| ------ | ------ | ------------------ |
+| upload | -      | s3 put objects.    |
+| del    | -      | s3 delete objects. |
+| list   | -      | s3 list objects.   |
 
 ## usage
 ```js
 import NxS3Helper from '@feizheng/next-s3-helper';
 
-// code goes here:
+const options = {
+  signatureVersion: 'v4',
+  region: 'cn-north-1',
+  endpoint: 'https://s3.cn-north-1.amazonaws.com.cn',
+  accessKeyId: process.env['AWS_ACCESS_KEY_ID'],
+  secretAccessKey: process.env['AWS_SECRET_ACCESS_KEY']
+};
+
+const s3helper = new NxS3Helper(options);
+
+
+// upload
+s3helper
+  .upload(['./dist/**'], {
+    ACL: 'public-read',
+    Bucket: 'course-assets.saybot.net',
+    context: {
+      local: 'dist',
+      remote: 'courseware-preview'
+    }
+  })
+  .then((res) => {
+    console.log(res);
+  });
+
+// del
+s3helper
+  .del({
+    Bucket: 'course-assets.saybot.net',
+    Prefix: 'courseware-preview'
+  }).then(res=>{
+    console.log(res);
+  })
 ```
 
 ## license

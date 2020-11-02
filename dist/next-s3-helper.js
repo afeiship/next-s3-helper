@@ -3,7 +3,7 @@
  * description: Aws s3 helper for next.
  * homepage: https://github.com/afeiship/next-s3-helper
  * version: 1.0.0
- * date: 2020-11-02T09:43:36.017Z
+ * date: 2020-11-02T10:29:00.512Z
  * license: MIT
  */
 
@@ -17,12 +17,37 @@
   var fs = require('fs');
   var path = require('path');
 
+  // https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html#deleteObjects-property
+
   var NxS3Helper = nx.declare('nx.S3Helper', {
     methods: {
       init: function (inOptions) {
         this.s3 = new AWS.S3(inOptions);
       },
-      del: function () {},
+      list: function (inOptions) {
+        return this.s3.listObjects(inOptions).promise();
+      },
+      del: function (inOptions) {
+        var self = this;
+        return new Promise(function (resolve, reject) {
+          self.s3
+            .listObjects({
+              Bucket: inOptions.Bucket,
+              Prefix: inOptions.Prefix
+            })
+            .promise()
+            .then(function (res) {
+              delete inOptions.Prefix;
+
+              var list = res.Contents.map(function (item) {
+                return { Key: item.Key };
+              });
+              var params = nx.mix({ Delete: { Objects: list, Quiet: true } }, inOptions);
+              return self.s3.deleteObjects(params).promise().then(resolve).catch(reject);
+            })
+            .catch(reject);
+        });
+      },
       upload: function (inPatterns, inOptions) {
         var self = this;
         var files = globby.sync(inPatterns, nx.mix({ absolute: true }, inOptions.globby));
@@ -33,8 +58,8 @@
           });
           return self.s3
             .putObject({
-              ACL: inOptions.acl || 'public-read',
-              Bucket: inOptions.bucket,
+              ACL: inOptions.ACL || 'public-read',
+              Bucket: inOptions.Bucket,
               Key: path.join(inOptions.context.remote, parsed.relative),
               Body: fs.readFileSync(parsed.full),
               ContentType: mime.getType(parsed.full)

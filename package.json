@@ -27,6 +27,7 @@
     "gulp-size": "^3.0.0",
     "gulp-uglify": "^3.0.2",
     "jest": "^26.1.0",
+    "rxjs": "^6.6.3",
     "uglify-js": "3.10.0",
     "uglify-save-license": "^0.4.1",
     "yargs": "^15.4.0"
