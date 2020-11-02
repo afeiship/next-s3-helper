@@ -2,8 +2,8 @@
  * name: @feizheng/next-s3-helper
  * description: Aws s3 helper for next.
  * homepage: https://github.com/afeiship/next-s3-helper
- * version: 1.0.0
- * date: 2020-11-02T10:29:00.512Z
+ * version: 1.0.1
+ * date: 2020-11-02T23:53:40.074Z
  * license: MIT
  */
 
@@ -27,7 +27,7 @@
       list: function (inOptions) {
         return this.s3.listObjects(inOptions).promise();
       },
-      del: function (inOptions) {
+      dels: function (inOptions) {
         var self = this;
         return new Promise(function (resolve, reject) {
           self.s3
@@ -48,7 +48,7 @@
             .catch(reject);
         });
       },
-      upload: function (inPatterns, inOptions) {
+      puts: function (inPatterns, inOptions) {
         var self = this;
         var files = globby.sync(inPatterns, nx.mix({ absolute: true }, inOptions.globby));
         var promises = files.map(function (filename) {

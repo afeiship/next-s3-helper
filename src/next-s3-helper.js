@@ -18,7 +18,7 @@
       list: function (inOptions) {
         return this.s3.listObjects(inOptions).promise();
       },
-      del: function (inOptions) {
+      dels: function (inOptions) {
         var self = this;
         return new Promise(function (resolve, reject) {
           self.s3
@@ -39,7 +39,7 @@
             .catch(reject);
         });
       },
-      upload: function (inPatterns, inOptions) {
+      puts: function (inPatterns, inOptions) {
         var self = this;
         var files = globby.sync(inPatterns, nx.mix({ absolute: true }, inOptions.globby));
         var promises = files.map(function (filename) {

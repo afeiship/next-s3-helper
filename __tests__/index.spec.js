@@ -15,7 +15,7 @@
   describe('NxS3Helper.methods', function () {
     test('api: upload', function (done) {
       s3helper
-        .upload(['./dist/**'], {
+        .puts(['./dist/**'], {
           ACL: 'public-read',
           Bucket: 'course-assets.saybot.net',
           context: {
@@ -35,7 +35,7 @@
 
     test('api: del', (done) => {
       s3helper
-        .del({
+        .dels({
           Bucket: 'course-assets.saybot.net',
           Prefix: 'courseware-preview'
         })

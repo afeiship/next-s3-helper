@@ -12,11 +12,11 @@ npm install -S @feizheng/next-s3-helper
 ```
 
 ## apis
-| api    | params | description        |
-| ------ | ------ | ------------------ |
-| upload | -      | s3 put objects.    |
-| del    | -      | s3 delete objects. |
-| list   | -      | s3 list objects.   |
+| api  | params | description        |
+| ---- | ------ | ------------------ |
+| puts | -      | s3 put objects.    |
+| dels | -      | s3 delete objects. |
+| list | -      | s3 list objects.   |
 
 ## usage
 ```js
@@ -33,9 +33,9 @@ const options = {
 const s3helper = new NxS3Helper(options);
 
 
-// upload
+// puts
 s3helper
-  .upload(['./dist/**'], {
+  .puts(['./dist/**'], {
     ACL: 'public-read',
     Bucket: 'course-assets.saybot.net',
     context: {
@@ -47,9 +47,9 @@ s3helper
     console.log(res);
   });
 
-// del
+// dels
 s3helper
-  .del({
+  .dels({
     Bucket: 'course-assets.saybot.net',
     Prefix: 'courseware-preview'
   }).then(res=>{
