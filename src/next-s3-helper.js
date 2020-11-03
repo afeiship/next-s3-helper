@@ -33,6 +33,7 @@
               var list = res.Contents.map(function (item) {
                 return { Key: item.Key };
               });
+              if (!list.length) return resolve(res);
               var params = nx.mix({ Delete: { Objects: list, Quiet: true } }, inOptions);
               return self.s3.deleteObjects(params).promise().then(resolve).catch(reject);
             })

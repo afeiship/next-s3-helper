@@ -2,8 +2,8 @@
  * name: @feizheng/next-s3-helper
  * description: Aws s3 helper for next.
  * homepage: https://github.com/afeiship/next-s3-helper
- * version: 1.0.2
- * date: 2020-11-03T01:05:15.926Z
+ * version: 1.0.3
+ * date: 2020-11-03T02:05:38.441Z
  * license: MIT
  */
 
@@ -42,6 +42,7 @@
               var list = res.Contents.map(function (item) {
                 return { Key: item.Key };
               });
+              if (!list.length) return resolve(res);
               var params = nx.mix({ Delete: { Objects: list, Quiet: true } }, inOptions);
               return self.s3.deleteObjects(params).promise().then(resolve).catch(reject);
             })

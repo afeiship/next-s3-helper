@@ -1,6 +1,6 @@
 {
   "name": "@feizheng/next-s3-helper",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Aws s3 helper for next.",
   "homepage": "https://github.com/afeiship/next-s3-helper",
   "author": {
