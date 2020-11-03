@@ -13,7 +13,7 @@
   var s3helper = new NxS3Helper(options);
 
   describe('NxS3Helper.methods', function () {
-    test('api: upload', function (done) {
+    test('api-puts', function (done) {
       s3helper
         .puts(['./dist/**'], {
           ACL: 'public-read',
@@ -33,7 +33,7 @@
         });
     });
 
-    test('api: del', (done) => {
+    test('api-dels', (done) => {
       s3helper
         .dels({
           Bucket: 'course-assets.saybot.net',

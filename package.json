@@ -9,7 +9,9 @@
   },
   "scripts": {
     "build": "gulp",
-    "test": "jest"
+    "test": "jest",
+    "test:puts":"jest -t api-puts",
+    "test:dels":"jest -t api-dels"
   },
   "main": "dist/next-s3-helper.js",
   "license": "MIT",
