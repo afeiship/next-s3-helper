@@ -2,8 +2,8 @@
  * name: @feizheng/next-s3-helper
  * description: Aws s3 helper for next.
  * homepage: https://github.com/afeiship/next-s3-helper
- * version: 1.0.1
- * date: 2020-11-02T23:53:40.074Z
+ * version: 1.0.2
+ * date: 2020-11-03T01:05:15.926Z
  * license: MIT
  */
 
@@ -61,7 +61,7 @@
               ACL: inOptions.ACL || 'public-read',
               Bucket: inOptions.Bucket,
               Key: path.join(inOptions.context.remote, parsed.relative),
-              Body: fs.readFileSync(parsed.full),
+              Body: fs.readFileSync(parsed.full, 'utf8'),
               ContentType: mime.getType(parsed.full)
             })
             .promise();

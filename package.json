@@ -1,6 +1,6 @@
 {
   "name": "@feizheng/next-s3-helper",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Aws s3 helper for next.",
   "homepage": "https://github.com/afeiship/next-s3-helper",
   "author": {
@@ -10,8 +10,8 @@
   "scripts": {
     "build": "gulp",
     "test": "jest",
-    "test:puts":"jest -t api-puts",
-    "test:dels":"jest -t api-dels"
+    "test:puts": "jest -t api-puts",
+    "test:dels": "jest -t api-dels"
   },
   "main": "dist/next-s3-helper.js",
   "license": "MIT",
