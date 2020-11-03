@@ -1,0 +1,187 @@
+/*
+object-assign
+(c) Sindre Sorhus
+@license MIT
+*/
+
+/*!
+  Copyright (c) 2017 Jed Watson.
+  Licensed under the MIT License (MIT), see
+  http://jedwatson.github.io/classnames
+*/
+
+/*!
+ *  name: @feizheng/react-burger-menu
+ *  description: Burger menu for react.
+ *  homepage: https://github.com/afeiship/react-burger-menu#readme
+ *  version: 1.0.7
+ *  date: 2020-10-27T05:17:37.511Z
+ *  license: MIT
+ */
+
+/*!
+ *  name: @feizheng/react-drawer
+ *  description: Drawer for react.
+ *  homepage: https://github.com/afeiship/react-drawer#readme
+ *  version: 1.0.3
+ *  date: 2020-10-27T00:52:28.520Z
+ *  license: MIT
+ */
+
+/*!
+ *  name: @feizheng/react-empty-state
+ *  description: Empty state for react.
+ *  homepage: https://github.com/afeiship/react-empty-state#readme
+ *  version: 1.0.4
+ *  date: 2020-09-08T08:28:27.461Z
+ *  license: MIT
+ */
+
+/*!
+ *  name: @feizheng/react-layout-trbla
+ *  description: Simply trbla layout for react.
+ *  homepage: https://github.com/afeiship/react-layout-trbla#readme
+ *  version: 1.0.0
+ *  date: 2020-10-29T09:01:53.213Z
+ *  license: MIT
+ */
+
+/*!
+ * name: @feizheng/http-rest-config
+ * description: A simple rest config for react project.
+ * homepage: 
+ * version: 2.5.1
+ * date: 2020-09-17T10:18:00.844Z
+ * license: MIT
+ */
+
+/*!
+ * name: @feizheng/next-abstract-request
+ * description: Standard abstract request.
+ * homepage: https://github.com/afeiship/next-abstract-request
+ * version: 1.1.8
+ * date: 2020-09-17T08:30:50.495Z
+ * license: MIT
+ */
+
+/*!
+ * name: @feizheng/next-content-type
+ * url: https://github.com/afeiship/next-content-type
+ * version: 1.1.4
+ * date: 2020-03-09T01:34:56.188Z
+ * license: MIT
+ */
+
+/*!
+ * name: @feizheng/next-data-transform
+ * url: https://github.com/afeiship/next-data-transform
+ * version: 1.1.0
+ * date: 2020-01-05T04:36:55.499Z
+ * license: MIT
+ */
+
+/*!
+ * name: @feizheng/next-delete
+ * description: Multiple delete for object.
+ * homepage: https://github.com/afeiship/next-delete
+ * version: 1.0.3
+ * date: 2020-06-29T01:12:12.552Z
+ * license: MIT
+ */
+
+/*!
+ * name: @feizheng/next-hashlize
+ * url: https://github.com/afeiship/next-hashlize
+ * version: 1.0.0
+ * date: 2019-11-25T08:15:14.870Z
+ * license: MIT
+ */
+
+/*!
+ * name: @feizheng/next-pad-index
+ * description: PadLeft with zero for index.
+ * homepage: https://github.com/afeiship/next-pad-index
+ * version: 1.0.0
+ * date: 2020-07-10T05:19:13.517Z
+ * license: MIT
+ */
+
+/*!
+ * name: @feizheng/next-param
+ * url: https://github.com/afeiship/next-param
+ * version: 1.1.4
+ * date: 2020-06-10T01:38:35.118Z
+ * license: MIT
+ */
+
+/*!
+ * name: @feizheng/next-parse-request-args
+ * description: Request arguments parser.
+ * homepage: https://github.com/afeiship/next-parse-request-args
+ * version: 1.0.9
+ * date: 2020-06-29T05:42:45.934Z
+ * license: MIT
+ */
+
+/*!
+ * name: @feizheng/next-stub-singleton
+ * description: Stub code for singleton.
+ * homepage: https://github.com/afeiship/next-stub-singleton
+ * version: 1.1.1
+ * date: 2020-06-14T10:04:26.493Z
+ * license: MIT
+ */
+
+/*!
+ * name: @feizheng/next-tmpl
+ * description: A simple tmpl based on next.
+ * homepage: https://github.com/afeiship/next-tmpl
+ * version: 1.0.3
+ * date: 2020-05-24T01:57:31.986Z
+ * license: MIT
+ */
+
+/*!
+ * name: @feizheng/next-update-state-value
+ * description: Update state value for react.
+ * homepage: https://github.com/afeiship/next-update-state-value
+ * version: 1.0.1
+ * date: 2020-08-18T14:30:35.892Z
+ * license: MIT
+ */
+
+/** @license React v0.20.1
+ * scheduler.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/** @license React v16.13.1
+ * react-is.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/** @license React v17.0.1
+ * react-dom.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/** @license React v17.0.1
+ * react.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */

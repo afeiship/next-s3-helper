@@ -15,11 +15,11 @@
   describe('NxS3Helper.methods', function () {
     test('api-puts', function (done) {
       s3helper
-        .puts(['./dist/**'], {
+        .puts(['./__tests__/build/**'], {
           ACL: 'public-read',
           Bucket: 'course-assets.saybot.net',
           context: {
-            local: 'dist',
+            local: './__tests__/build',
             remote: 'courseware-preview'
           }
         })
