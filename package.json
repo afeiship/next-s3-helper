@@ -1,6 +1,6 @@
 {
-  "name": "@feizheng/next-s3-helper",
-  "version": "1.0.3",
+  "name": "@jswork/next-s3-helper",
+  "version": "1.0.0",
   "description": "Aws s3 helper for next.",
   "homepage": "https://github.com/afeiship/next-s3-helper",
   "author": {
@@ -10,37 +10,35 @@
   "scripts": {
     "build": "gulp",
     "test": "jest",
-    "test:puts": "jest -t api-puts",
-    "test:dels": "jest -t api-dels"
+    "release": "release-it"
   },
-  "main": "dist/next-s3-helper.js",
+  "main": "dist/index.js",
   "license": "MIT",
   "devDependencies": {
-    "@feizheng/gulp-pkg-header": "^1.0.4",
-    "@feizheng/next-js-core2": "^2.6.0",
-    "@feizheng/rake-git": "^1.2.1",
-    "del": "^5.1.0",
+    "@jswork/gulp-pkg-header": "^1.0.2",
+    "@jswork/next": "^1.0.2",
+    "del": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-debug": "^4.0.0",
     "gulp-ignore": "^3.0.0",
-    "gulp-load-plugins": "^2.0.3",
+    "gulp-load-plugins": "^2.0.5",
     "gulp-rename": "^2.0.0",
     "gulp-size": "^3.0.0",
     "gulp-uglify": "^3.0.2",
-    "jest": "^26.1.0",
-    "rxjs": "^6.6.3",
-    "uglify-js": "3.10.0",
-    "uglify-save-license": "^0.4.1",
-    "yargs": "^15.4.0"
-  },
-  "dependencies": {
-    "@feizheng/next-path-parse": "^1.0.2",
-    "aws-sdk": "^2.783.0",
-    "globby": "^11.0.1",
-    "mime": "^2.4.6"
+    "jest": "^26.6.3",
+    "release-it": "^14.2.1",
+    "uglify-js": "3.11.6",
+    "uglify-save-license": "^0.4.1"
   },
   "publishConfig": {
+    "access": "public",
     "registry": "https://registry.npmjs.org"
+  },
+  "dependencies": {
+    "@jswork/next-path-parse": "^1.0.0",
+    "aws-sdk": "^2.796.0",
+    "globby": "^11.0.1",
+    "mime": "^2.4.6"
   }
 }

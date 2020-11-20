@@ -1,8 +1,6 @@
 (function () {
-  var nx = require('@feizheng/next-js-core2');
-  var NxS3Helper = require('../src/next-s3-helper');
-
-  var options = {
+  const NxS3Helper = require('../src');
+  const options = {
     signatureVersion: 'v4',
     region: 'cn-north-1',
     endpoint: 'https://s3.cn-north-1.amazonaws.com.cn',
@@ -10,7 +8,7 @@
     secretAccessKey: process.env['AWS_SECRET_ACCESS_KEY']
   };
 
-  var s3helper = new NxS3Helper(options);
+  const s3helper = new NxS3Helper(options);
 
   describe('NxS3Helper.methods', function () {
     test('api-puts', function (done) {
@@ -49,4 +47,5 @@
         });
     });
   });
+
 })();

@@ -1,7 +1,17 @@
+/*!
+ * name: @jswork/next-s3-helper
+ * description: Aws s3 helper for next.
+ * homepage: https://github.com/afeiship/next-s3-helper
+ * version: 1.0.0
+ * date: 2020-11-20 10:24:02
+ * license: MIT
+ */
+
 (function () {
   var global = global || this || window || Function('return this')();
-  var nx = global.nx || require('@feizheng/next-js-core2');
-  var nxPathParse = require('@feizheng/next-path-parse');
+  var nx = global.nx || require('@jswork/next');
+
+  var nxPathParse = require('@jswork/next-path-parse');
   var AWS = require('aws-sdk');
   var globby = require('globby');
   var mime = require('mime');
