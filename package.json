@@ -40,5 +40,15 @@
     "aws-sdk": "^2.796.0",
     "globby": "^11.0.1",
     "mime": "^2.4.6"
-  }
+  },
+  "keywords": [
+    "next",
+    "aws",
+    "s3",
+    "helper",
+    "cli",
+    "oss",
+    "bucket",
+    "aws-cli"
+  ]
 }
