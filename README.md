@@ -20,7 +20,7 @@ npm install -S @jswork/next-s3-helper
 
 ## usage
 ```js
-import NxS3Helper from '@feizheng/next-s3-helper';
+import NxS3Helper from '@jswork/next-s3-helper';
 
 const options = {
   signatureVersion: 'v4',
