@@ -54,7 +54,7 @@
               ACL: inOptions.ACL || 'public-read',
               Bucket: inOptions.Bucket,
               Key: path.join(inOptions.context.remote, parsed.relative),
-              Body: fs.readFileSync(parsed.full, 'utf8'),
+              Body: fs.readFileSync(parsed.full),
               ContentType: mime.getType(parsed.full)
             })
             .promise();
