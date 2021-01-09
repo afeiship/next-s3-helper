@@ -2,8 +2,8 @@
  * name: @jswork/next-s3-helper
  * description: Aws s3 helper for next.
  * homepage: https://github.com/afeiship/next-s3-helper
- * version: 1.0.1
- * date: 2020-11-30 13:47:15
+ * version: 1.0.2
+ * date: 2021-01-09 16:35:57
  * license: MIT
  */
 
